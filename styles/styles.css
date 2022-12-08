@@ -24,6 +24,7 @@ ul, ol {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
+    padding-inline-start: 0;
 }
 img{
     display:block;
@@ -48,8 +49,12 @@ button{
 .contact-list{
     margin-left: auto;
 }
-.logo{
-    margin-right: 77px;
+.nav-list-item:not(:last-child), .contact-item:not(:last-child){
+    margin-right: 40px;
+}
+.page-header-container{
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 -----------------------------
@@ -67,6 +72,7 @@ button{
     color: var(--primary-brand-color);
     margin-right: 77px;
     text-decoration: none;
+    margin-right: 77px;
     }
 .logo-studio-up {
     font-family: 'Raleway', sans-serif;
@@ -139,7 +145,7 @@ button{
     line-height: 1.18;
     letter-spacing: 0.04em;
     color: var(--light-background-color);
-}
+   }
 
 /* HERO */
 .hero-section-title {    
@@ -148,9 +154,24 @@ button{
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--light-background-color);
+    margin-bottom: 48px;
+    
 }
 .hero-section{
     background-color: var(--shadow-headings-color);
+    height: 603px;
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-items: center; */
+}
+.hero-section-div{
+    padding-top: 192px;
+    padding-bottom: 192px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
 /* PRINCIPLES */
@@ -167,6 +188,21 @@ button{
     letter-spacing: 0.02em;
     color: var(--body-text-color);
 }
+.principles-section-list{
+    display: flex;
+    justify-content: space-between;
+}
+.principles-section-list-item{
+    width: 264px;
+}
+.principles{
+    height: 244px;
+    padding-top: 120px;
+}
+.principles-section-list-item-header{
+    margin-bottom: 8px;
+}
+
 
 /* WHAT WE ARE DOING */
 .what-we-are-doing-header, .our-team-header {
