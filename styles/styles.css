@@ -15,6 +15,44 @@ body {
     color: var(--body-text-color);
 }
 
+/* STYLES RESET */
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+img{
+    display:block;
+}
+button{
+    cursor:pointer;
+}
+
+/* FLEX & POSIOTION*/
+.container{
+    width: 1158px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.page-header-container{
+    display:flex;
+    align-items: center;
+}
+.nav-section, .nav-list, .contact-list{
+    display: flex;
+}
+.contact-list{
+    margin-left: auto;
+}
+.logo{
+    margin-right: 77px;
+}
+
+-----------------------------
 /* HEADER */
 .logo, .nav-list-item-link, .contact-item-link {
     text-decoration: none;
@@ -27,7 +65,9 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand-color);
-}
+    margin-right: 77px;
+    text-decoration: none;
+    }
 .logo-studio-up {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -74,7 +114,6 @@ body {
     background-color: var(--primary-brand-color);
     color: var(--light-background-color);
     border: none;
-    cursor:pointer;
 }
 
 .hero-button:hover {
@@ -100,7 +139,6 @@ body {
     line-height: 1.18;
     letter-spacing: 0.04em;
     color: var(--light-background-color);
-    cursor: pointer;
 }
 
 /* HERO */
