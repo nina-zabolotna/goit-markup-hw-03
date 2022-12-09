@@ -13,6 +13,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--body-text-color);
+    margin: 0;
 }
 
 /* STYLES RESET */
@@ -36,6 +37,8 @@ button{
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 /* HEADER */
 .logo, .nav-list-item-link, .contact-item-link {
