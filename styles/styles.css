@@ -199,8 +199,8 @@ button{
     width: 264px;
 }
 .principles{
-    height: 244px;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 .principles-section-list-item-header{
     margin-bottom: 8px;
