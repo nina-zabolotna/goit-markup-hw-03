@@ -87,7 +87,9 @@ button{
     align-items: center;
 }
 .header-box {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--light-mode-color);
 }
 .nav-section,.nav-list,.contact-list {
     display: flex;
@@ -301,7 +303,9 @@ button{
 }
 .gallery-list-item{
     margin-bottom: 48px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--helper-text-color);
 }
 .gallery{
     padding-top: 93px;
