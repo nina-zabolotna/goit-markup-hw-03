@@ -1,2 +1,2 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 This repository is for GoIT HW1
