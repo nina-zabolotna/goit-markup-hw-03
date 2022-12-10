@@ -29,6 +29,7 @@ ul, ol {
 }
 img{
     display:block;
+    max-width: 100%;
 }
 button{
     cursor:pointer;
@@ -82,14 +83,10 @@ button{
 .nav-list-item-link:hover, 
 .nav-list-item-link:active, 
 .nav-list-item-link:focus,
-/* .nav-list-item-link:visited, */
 .contact-item-link:hover
 .contact-item-link:visited {
     color: var(--primary-brand-color);
 }
-/* .nav-list-item-link:active {
-    color: var(--primary-brand-color);
-} */
 .page-header-container {
     display: flex;
     align-items: center;
@@ -114,11 +111,6 @@ button{
     padding-top: 24px;
     padding-bottom: 24px;
 }
-/* .page-header-container {
-    padding-top: 24px;
-    padding-bottom: 24px;
-} */
-
 .current{
     color: var(--primary-brand-color);
 }
@@ -207,7 +199,6 @@ button{
 }
 .principles-section-list{
     display: flex;
-    /* justify-content: space-between; */
 }
 .principles-section-list-item{
     width: calc((100%-24*3)/4);
@@ -229,6 +220,10 @@ button{
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--shadow-headings-color);
+    margin-bottom: 72px;
+}
+.what-we-are-doing{
+    padding-bottom: 120px;
 }
 
 .what-we-are-doing-div {
@@ -239,12 +234,12 @@ button{
 }
 .what-we-are-doing-list{
     display: flex;
-    margin-top: 72px;
-    margin-bottom: 120px;
 }
-
 .img-doing-item:not(:last-child){
     margin-right: 24px;
+}
+.img-doing-item{
+    width: calc((100%-24*2)/3);
 }
 /* OUR TEAM */
 .our-team-list-item-header{
@@ -253,6 +248,7 @@ button{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--shadow-headings-color);
+    text-align: center;
 }
 .our-team-list-item-text{
     font-size: 16px;
@@ -267,8 +263,16 @@ button{
 }
 .our-team-list-item{
     background-color: var(--light-background-color);
-    padding-bottom: 32px;
 }
+.our-team-list-item{
+    width: calc((100%-24*3)/4);
+    max-width: 100%;
+}
+
+.our-team-list-item-header-and-text{
+    padding: 32px 16px;
+}
+
 .our-team-list-item:not(:last-child){
     margin-right: 24px;
 }
@@ -280,13 +284,8 @@ button{
 }
 .our-team-list{
     display: flex;
-    margin-top: 72px;
  }
 
-.our-team-list-item-header{
-    margin-top: 32px;
-    text-align: center;
-}
 .our-team-list-item-text{
     margin-top: 8px;
     text-align: center;
@@ -298,8 +297,6 @@ button{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--shadow-headings-color);
-    margin-top: 32px;
-    margin-left: 16px;
 }
 .gallery-title{
     text-align: center;
@@ -310,8 +307,6 @@ button{
     letter-spacing: 0.02em;
     color: var(--body-text-color);
     margin-top: 8px;
-    margin-bottom: 32px;
-    margin-left: 16px;
 }
 .button-filters-list{
     display: flex;
@@ -322,13 +317,21 @@ button{
 }
 .gallery-list-item{
     margin-bottom: 48px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: var(--helper-text-color);
+    margin-right: 24px;
+    border: 0.5px solid var(--light-mode-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.gallery-list-item:hover, .gallery-list-item:focus{
+    border: 0.5px solid var(--light-mode-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .gallery{
-    padding-top: 93px;
+    padding-top: 96px;
     padding-bottom: 120px;
+}
+.gallery-list-div{
+    padding-left: 0;
+    padding-right: 0;
 }
 .buttons-div{
     margin-bottom: 75px;
@@ -336,8 +339,15 @@ button{
 .gallery-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-right: -24px;
+    margin-bottom: -48px;
 }
+.gallery-header-and-text{
+    margin: 32px 0px;
+    padding-left: 16px;
+
+}
+
 /* FOOTER */
 .footer-text {
     font-size: 16px;
