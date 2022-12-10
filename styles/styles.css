@@ -37,8 +37,8 @@ button{
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /* HEADER */
 .logo, .nav-list-item-link, .contact-item-link {
@@ -79,12 +79,17 @@ button{
 .nav-list, .contact-list, .button-filters-list, .gallery-list, .principles-section-list, .what-we-are-doing-list, .our-team-list {
     list-style: none;
 }
-.nav-list-item-link:hover, .contact-item-link:hover {
+.nav-list-item-link:hover, 
+.nav-list-item-link:active, 
+.nav-list-item-link:focus,
+/* .nav-list-item-link:visited, */
+.contact-item-link:hover
+.contact-item-link:visited {
     color: var(--primary-brand-color);
 }
-.nav-list-item-link:active {
+/* .nav-list-item-link:active {
     color: var(--primary-brand-color);
-}
+} */
 .page-header-container {
     display: flex;
     align-items: center;
@@ -104,10 +109,15 @@ button{
 .contact-item:not(:last-child) {
     margin-right: 40px;
 }
-.page-header-container {
+.nav-list-item, .contact-item, .nav-list-item-link,
+.contact-item-link, .logo {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+/* .page-header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+} */
 /* BUTTON-FILTERS */
 
 .button-filter {
