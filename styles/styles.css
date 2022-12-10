@@ -118,6 +118,10 @@ button{
     padding-top: 24px;
     padding-bottom: 24px;
 } */
+
+.current{
+    color: var(--primary-brand-color);
+}
 /* BUTTON-FILTERS */
 
 .button-filter {
@@ -203,10 +207,13 @@ button{
 }
 .principles-section-list{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .principles-section-list-item{
-    width: 264px;
+    width: calc((100%-24*3)/4);
+}
+.principles-section-list-item:not(:last-child){
+    margin-right: 24px;
 }
 .principles{
     padding-top: 120px;
